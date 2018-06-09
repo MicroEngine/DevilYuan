@@ -34,6 +34,7 @@ DevilYuan股票量化系统由python编写，支持python3.4+，有如下功能�
 - 安装[Anaconda](https://www.anaconda.com/download/)，python3.4+ 64位版本
 - 安装[MongoDB](https://www.mongodb.com/download-center#production)，并将[MongoDB配置为系统服务](hhttps://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#configure-a-windows-service-for-mongodb-community-edition)
     -  由于个股历史分笔数据比较大，建议配备1T以上的硬盘
+    -  [MogonDB客户端](https://robomongo.org/download)
 -  实盘交易现在支持的是银河证券，请安装对应的PC客户端
     - 银河证券的客户端需要做如下配置，不然会导致下单时价格出错以及客户端超时锁定
         - 系统设置 > 界面设置: 界面不操作超时时间设为 0
