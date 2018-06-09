@@ -1,6 +1,5 @@
 from .DyStockDataViewer import *
 
-from .IndexMaStats.DyStockDataIndexMaStatsMainWindow import *
 from .JaccardIndex.DyStockDataJaccardIndexMainWindow import *
 from .IndexConsecutiveDayLineStats.DyStockDataIndexConsecutiveDayLineStatsTabWidget import *
 from .LimitUpStats.DyStockDataLimitUpStatsMainWindow import *

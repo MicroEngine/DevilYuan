@@ -244,18 +244,6 @@
     <Compile Include="Stock\Data\Viewer\IndexConsecutiveDayLineStats\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Stock\Data\Viewer\IndexMaStats\DyStockDataIndexMaKChartStatsDlg.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Stock\Data\Viewer\IndexMaStats\DyStockDataIndexMaStatsMainWindow.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Stock\Data\Viewer\IndexMaStats\DyStockDataIndexMaStatsWidget.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Stock\Data\Viewer\IndexMaStats\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexCodeSetDetailsWidget.py">
       <SubType>Code</SubType>
     </Compile>
@@ -841,7 +829,6 @@
     <Folder Include="Stock\Common\" />
     <Folder Include="Stock\Data\Ui\Other\" />
     <Folder Include="Stock\Data\Viewer\JaccardIndex\" />
-    <Folder Include="Stock\Data\Viewer\IndexMaStats\" />
     <Folder Include="Stock\Data\Viewer\IndexConsecutiveDayLineStats\" />
     <Folder Include="Stock\Data\Viewer\LimitUpStats\" />
     <Folder Include="Stock\Data\Viewer\FocusAnalysis\" />
