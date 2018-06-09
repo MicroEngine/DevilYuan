@@ -27,6 +27,7 @@ DevilYuan股票量化系统由python编写，支持python3.4+，有如下功能�
 - 实盘单账户多策略
 
 ### 运行后的界面
+![image](https://github.com/moyuanz/DevilYuan/blob/master/docs/main.png)
 
 # 运行前的准备
 - 支持的操作系统：Windows 7/8/10
