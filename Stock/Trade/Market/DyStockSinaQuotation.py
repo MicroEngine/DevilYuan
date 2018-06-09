@@ -44,10 +44,7 @@ class DyStockSinaQuotation(object):
         # The situation is that if without proxy, it will take some time for http visiting failed.
         # During that time, 1s timer event will be cumulated at stockSianQuotation hand queue so that Ui event cannot be handled on time.
         if event.data:
-            #proxy_support = urllib.request.ProxyHandler({'http': '87.254.212.120:8080'})
-            #proxy_support = urllib.request.ProxyHandler({'http': '10.144.1.10:8080'})
-            proxy_support = urllib.request.ProxyHandler({'http': '135.7.146.1:8000'})
-            #proxy_support = urllib.request.ProxyHandler({'http': '135.7.178.1:8000'})
+            proxy_support = urllib.request.ProxyHandler({'http': 'x.x.x.x:8000'})
             opener = urllib.request.build_opener(proxy_support)
             urllib.request.install_opener(opener)
 
