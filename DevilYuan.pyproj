@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1fd641c0-e2df-4a50-b5b2-91880b64ba01</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>DyMainWindow.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>DevilYuan</Name>
+    <RootNamespace>PythonT</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DyCommon\DyCommon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\DyScheduler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\DyTalib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyCodeDateDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DySingleEditDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyStatsDataFrameTableWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DySubInfoWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventEngine\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\DyStockBackTestingCommon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\Strategy\DyStockBackTestingStrategyEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\DyStockBackTestingMainEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\Strategy\DyStockBackTestingStrategyEngineProxy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\Strategy\DyStockBackTestingStrategyEngineProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\Strategy\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\DyStockBackTestingResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyParamGroupResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyPeriodResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyPeriodsResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyResultDealsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyResultPositionWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\DyStockBackTestingStrategyWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyResultStatsWidget.py" />
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\DyStockBackTestingStrategyResultWidget.py" />
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\Other\DyStockBackTestingStrategyResultOverviewWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\Strategy\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Basic\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\DyStockBackTestingMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Other\DyStockBackTestingSettingDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Ui\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\DyStockCommon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockTableAddColumnsDlg.py" />
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockTableColumnOperateDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockTableFilterDlg.py" />
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockIndustryCompareDlg.py" />
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockInfoDlg.py" />
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockTableSelectDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\DyStockVolatilityDistDlg.py" />
+    <Compile Include="Stock\Common\Ui\Basic\Dlg\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\Other\DyStockIndustryCompareWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Deal\Basic\DyStockDealDetailsInfoWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Deal\Basic\DyStockDealDetailsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Deal\Basic\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Deal\DyStockDealDetailsMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Deal\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\DyStockMaViewerIndicatorMenu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\Basic\DyStockTableWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\Ui\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Common\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\DyStockConfig.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\DyStockHistDaysDataSourceConfigDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\DyStockMongoDbConfigDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\Trade\DyStockAccountConfigDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\Trade\DyStockWxScKeyConfigDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\Trade\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Config\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\Common\DyStockDataSectorCodeTable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Ui\Other\DyStockDataHistDaysManualUpdateDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Ui\Other\DyStockDataHistTicksVerifyDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\DyStockDataAssembler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\DyStockDataML.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\DyStockDataSpider.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\Other\DyStockDataFocusAnalysisUtility.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\DyStockDataWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\FocusAnalysis\DyStockDataFocusAnalysisMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\FocusAnalysis\DyStockDataFocusAnalysisWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\FocusAnalysis\DyStockDataFocusInfoPoolWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\FocusAnalysis\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexConsecutiveDayLineStats\DyStockDataIndexConsecutiveDayLineStatsTabWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexConsecutiveDayLineStats\DyStockDataIndexConsecutiveDayLineStatsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexConsecutiveDayLineStats\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexMaStats\DyStockDataIndexMaKChartStatsDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexMaStats\DyStockDataIndexMaStatsMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexMaStats\DyStockDataIndexMaStatsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\IndexMaStats\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexCodeSetDetailsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexCodeSetWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexCodeSetWidgets.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexPlotDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\DyStockDataJaccardIndexWidgets.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\JaccardIndex\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\LimitUpStats\DyStockDataLimitUpStatsMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\LimitUpStats\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_InsideRedLine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_HighTurn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_MacdBottomDeviation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_MasAttack.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_MasLong.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_MaWalk.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_Rebound.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_SwingTrough.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Other\DySS_ETF.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_AbnormalVolatility.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_ChipDist.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_LimitUp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_LimitUpRise.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_NeedleBottom.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_OverSold.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Fundamental\DySS_GrowingStocks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Fundamental\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Fundamental\DySS_High2SendStocks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_LimitUpAnalysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_LimitUpPredict.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_Pairs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_UpDownList.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Dlg\DyStockSelectRefactoryParamsDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Other\DyStockSelectItemMenu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\DyStockSelectViewerEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_PlatformUpBreakThrough.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_RisingEve.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_Stagflation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_StrongBack.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\DySS_Correlation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Dlg\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Select\DyStockSelectStrategySelectResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\DyStockSelectBBandsStatsDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\DyStockSelectDayKChartPeriodDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\DyStockSelectIndexMaKChartStatsDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\DyStockSelectIndexMaStatsDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\DyStockSelectJaccardIndexDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\Broker\DyStockSimuAccountManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\Broker\DyStockGtjaAccountManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\Broker\DyStockYhAccountManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\Broker\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\DyStockPos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopLossMaMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopLossPnlRatioMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopLossStepMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopProfitMaMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopProfitPnlRatioMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\DyStockStopTimeMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\StopMode\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\DyTrader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\Simu\SimuTrader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\Simu\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\DyStockTradeBrokerEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\UiTrader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\WebTrader.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\clienttrader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Broker\YhNew\config\client.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\config\__init__.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\exceptions.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\helpers.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\log.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\YhTrader.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\YhUiTrader.py" />
+    <Compile Include="Stock\Trade\Broker\YhNew\__init__.py" />
+    <Compile Include="Stock\Trade\Broker\__init__.py" />
+    <Compile Include="Stock\Trade\Strategy\Cta\DyST_BankIntraDaySpread.py" />
+    <Compile Include="Stock\Trade\Strategy\Cta\DyST_MaWalk.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Strategy\Cta\DyST_IntraDayT.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Strategy\DyStockCtaEngineExtra.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Strategy\Cta\DyST_AbnormalVolatility.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\DyStockBackTestingAccountManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\DyStockDataCommon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\Common\DyStockDataCodeTable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\Common\DyStockDataCommonEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\Common\DyStockDataTradeDayTable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\Common\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\DyStockDataDaysEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\DyStockDataStrategyDataPrepareEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\DyStockDataTicksEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\DyStockDataUtility.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Utility\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\DyStockDataViewer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Viewer\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\DyStockSelectCommon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\DyStockSelectMainEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\Regression\DyStockSelectRegressionEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\DyStockSelectSelectEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\Regression\DyStockSelectRegressionEngineProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\Regression\DyStockSelectRegressionEngineProxy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\Regression\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Engine\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\DySS_BBands.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Cta\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\DyStockSelectStrategyTemplate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\Stats\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Strategy\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Param\DyStockSelectParamWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Param\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Regression\DyStockSelectRegressionResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Select\DyStockSelectSelectResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Param\DyStockSelectStrategyParamWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Regression\DyStockSelectStrategyRegressionResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Regression\DyStockSelectStrategyRegressionPeriodResultWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\DyStockSelectStrategyWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Regression\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\Select\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Basic\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\DyStockSelectMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\Other\DyStockSelectTestedStocksDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\Ui\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Select\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Ui\Other\DyStockDataStrategyDataPrepareDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Ui\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\AccountManager\DyStockAccountManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Strategy\Obsolete\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\DyStockTradeAccountWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\DyStockTradeBrokerAccountWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\DyStockTradeCapitalWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\DyStockTradeCurDealsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\DyStockTradeCurEntrustsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\DyStockTradePositionWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\Account\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\DyStockMarketStrengthWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\Account\DyStockTradeStrategyAccountWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\Account\DyStockTradeStrategyDealsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\Account\DyStockTradeStrategyEntrustsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\Account\DyStockTradeStrategyPosWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\Account\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Data\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Data\DyStockTradeStrategyMarketMonitorDataWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\DyStockTradeStrategyMarketMonitorIndWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\DyStockTradeStrategyMarketMonitorOpWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\DyStockTradeStrategyMarketMonitorSignalDetailsWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\DyStockTradeStrategyMarketMonitorWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Other\DyStockTradeStrategyBuyDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Other\DyStockTradeStrategySellDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\Other\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyBasicMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyDataFrameWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyDataFrameTableWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyDateDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyInfoDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyProcessNbrDlg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyProgressWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Ui\DyStockDataMainWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\DyStockDataEngine.py" />
+    <Compile Include="Stock\Data\Engine\DyStockDataMainEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Gateway\DyStockDataGateway.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Gateway\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Ui\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\DyStockTradeCommon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\DyStockTradeOneKeyHangUp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\WeChat\DyStockTradeWxEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\WeChat\wxbot.py" />
+    <Compile Include="Stock\Trade\WeChat\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Engine\DyStockMongoDbEngine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Data\Gateway\DyStockDataWind.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\BackTesting\Engine\Strategy\DyStockBackTestingCtaEngine.py" />
+    <Compile Include="Stock\Trade\Strategy\DyStockCtaBase.py" />
+    <Compile Include="Stock\Trade\Strategy\DyStockCtaEngine.py" />
+    <Compile Include="Stock\Trade\Strategy\DyStockCtaTemplate.py" />
+    <Compile Include="Stock\Trade\Strategy\Cta\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Strategy\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\DyStockStrategyBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventEngine\DyEvent.py" />
+    <Compile Include="EventEngine\DyEventEngine.py" />
+    <Compile Include="Stock\Trade\Engine\DyStockTradeMainEngine.py" />
+    <Compile Include="Stock\Trade\Engine\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Market\DyStockMarketFilter.py" />
+    <Compile Include="Stock\Trade\Market\DyStockMarketEngine.py" />
+    <Compile Include="Stock\Trade\Market\DyStockSinaQuotation.py" />
+    <Compile Include="Stock\Trade\Market\__init__.py" />
+    <Compile Include="Stock\Trade\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyStatsTableWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyCommon\Ui\DyTableWidget.py" />
+    <Compile Include="DyCommon\Ui\DyTreeWidget.py" />
+    <Compile Include="DyCommon\Ui\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyMainWindow.py" />
+    <Compile Include="Stock\Trade\Ui\Basic\DyStockMarketIndexMonitorWidget.py" />
+    <Compile Include="Stock\Trade\Ui\Basic\StrategyMarket\DyStockTradeStrategiesMarketMonitorWidget.py" />
+    <Compile Include="Stock\Trade\Ui\Basic\DyStockTradeStrategyWidget.py" />
+    <Compile Include="DyCommon\Ui\DyLogWidget.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stock\Trade\Ui\Basic\__init__.py" />
+    <Compile Include="Stock\Trade\Ui\DyStockTradeMainWindow.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DyCommon\" />
+    <Folder Include="DyCommon\Ui\" />
+    <Folder Include="EventEngine\" />
+    <Folder Include="Stock\" />
+    <Folder Include="Stock\BackTesting\Engine\" />
+    <Folder Include="Stock\BackTesting\Engine\Strategy\" />
+    <Folder Include="Stock\BackTesting\Ui\" />
+    <Folder Include="Stock\BackTesting\Ui\Basic\" />
+    <Folder Include="Stock\BackTesting\Ui\Basic\Strategy\" />
+    <Folder Include="Stock\BackTesting\Ui\Basic\Strategy\Other\" />
+    <Folder Include="Stock\BackTesting\Ui\Other\" />
+    <Folder Include="Stock\Common\Ui\" />
+    <Folder Include="Stock\Common\Ui\Basic\Dlg\" />
+    <Folder Include="Stock\Common\Ui\Basic\Other\" />
+    <Folder Include="Stock\Common\Ui\Deal\" />
+    <Folder Include="Stock\Common\Ui\Deal\Basic\" />
+    <Folder Include="Stock\Common\Ui\Basic\" />
+    <Folder Include="Stock\Config\Trade\" />
+    <Folder Include="Stock\Data\Engine\Common\" />
+    <Folder Include="Stock\Data\Gateway\" />
+    <Folder Include="Stock\Data\Engine\" />
+    <Folder Include="Stock\Data\Utility\" />
+    <Folder Include="Stock\Data\Utility\Other\" />
+    <Folder Include="Stock\Data\Viewer\" />
+    <Folder Include="Stock\Data\Ui\" />
+    <Folder Include="Stock\BackTesting\" />
+    <Folder Include="Stock\Common\" />
+    <Folder Include="Stock\Data\Ui\Other\" />
+    <Folder Include="Stock\Data\Viewer\JaccardIndex\" />
+    <Folder Include="Stock\Data\Viewer\IndexMaStats\" />
+    <Folder Include="Stock\Data\Viewer\IndexConsecutiveDayLineStats\" />
+    <Folder Include="Stock\Data\Viewer\LimitUpStats\" />
+    <Folder Include="Stock\Data\Viewer\FocusAnalysis\" />
+    <Folder Include="Stock\Config\" />
+    <Folder Include="Stock\Select\" />
+    <Folder Include="Stock\Select\Engine\" />
+    <Folder Include="Stock\Select\Engine\Regression\" />
+    <Folder Include="Stock\Select\Strategy\" />
+    <Folder Include="Stock\Select\Strategy\Cta\" />
+    <Folder Include="Stock\Select\Strategy\Fundamental\" />
+    <Folder Include="Stock\Select\Strategy\Other\" />
+    <Folder Include="Stock\Select\Strategy\Stats\" />
+    <Folder Include="Stock\Select\Ui\" />
+    <Folder Include="Stock\Select\Ui\Basic\" />
+    <Folder Include="Stock\Select\Ui\Basic\Dlg\" />
+    <Folder Include="Stock\Select\Ui\Basic\Other\" />
+    <Folder Include="Stock\Select\Ui\Basic\Select\" />
+    <Folder Include="Stock\Select\Ui\Basic\Param\" />
+    <Folder Include="Stock\Select\Ui\Basic\Regression\" />
+    <Folder Include="Stock\Select\Ui\Other\" />
+    <Folder Include="Stock\Trade\AccountManager\Broker\" />
+    <Folder Include="Stock\Trade\AccountManager\StopMode\" />
+    <Folder Include="Stock\Trade\Broker\" />
+    <Folder Include="Stock\Trade\AccountManager\" />
+    <Folder Include="Stock\Trade\Broker\YhNew\" />
+    <Folder Include="Stock\Trade\Broker\YhNew\config\" />
+    <Folder Include="Stock\Trade\Broker\Simu\" />
+    <Folder Include="Stock\Trade\Strategy\Obsolete\" />
+    <Folder Include="Stock\Trade\WeChat\" />
+    <Folder Include="Stock\Trade\Strategy\" />
+    <Folder Include="Stock\Trade\Strategy\Cta\" />
+    <Folder Include="Stock\Trade\Ui\Basic\Account\" />
+    <Folder Include="Stock\Trade\Ui\Basic\StrategyMarket\" />
+    <Folder Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\Account\" />
+    <Folder Include="Stock\Trade\Ui\Basic\StrategyMarket\Data\" />
+    <Folder Include="Stock\Trade\Ui\Basic\StrategyMarket\Ind\" />
+    <Folder Include="Stock\Trade\Ui\Basic\StrategyMarket\Other\" />
+    <Folder Include="Stock\Trade\Ui\\" />
+    <Folder Include="Stock\Data\" />
+    <Folder Include="Stock\Trade\" />
+    <Folder Include="Stock\Trade\Engine\" />
+    <Folder Include="Stock\Trade\Market\" />
+    <Folder Include="Stock\Trade\Ui\" />
+    <Folder Include="Stock\Trade\Ui\Basic\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
