@@ -12,8 +12,11 @@
 
 # 自动更新方式
 1. 手动下载某一交易日的历史日线数据
+![image](https://github.com/moyuanz/DevilYuan/blob/master/docs/data/mannualDaysConfig.png)
 2. 手动下载步骤1里的对应的交易日的历史分笔数据
+![image](https://github.com/moyuanz/DevilYuan/blob/master/docs/data/mannualTicksConfig.png)
 3. 一键更新，自动更新历史日线和分笔数据到今天
+![image](https://github.com/moyuanz/DevilYuan/blob/master/docs/data/result.png)
 
 # 手动更新方式
 参考**自动更新方式**里的步骤1和2
